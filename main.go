@@ -25,11 +25,11 @@ type Weather struct {
 		Forecastday []struct {
 			Hour []struct {
 				TimeEpoch int64   `json:"time_epoch"`
-				TemC      float64 `json:"tem_c"`
+				TempC     float64 `json:"temp_c"`
 				Condition struct {
 					Text string `json:"text"`
 				} `json:"condition"`
-				ChanceOfRain float64 `json:"chanceOf_rain"`
+				ChanceOfRain float64 `json:"chance_of_rain"`
 			} `json:"hour"`
 		} `json:"forecastday"`
 	} `json:"forecast"`
@@ -77,7 +77,7 @@ func main() {
 
 		fmt.Printf("%s - %.0fC, %.0f%%, %s \n",
 			date.Format("15.04"),
-			hour.TemC,
+			hour.TempC,
 			hour.ChanceOfRain,
 			hour.Condition.Text,
 		)
