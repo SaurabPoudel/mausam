@@ -1,5 +1,7 @@
 # Mausam : CLI Based Weather Forecast App
 
+![Image](https://github.com/SaurabPoudel/mausam/blob/main/screen.png)
+
 ## Run this application
 
 Create a .env file in root like this 
